@@ -19,10 +19,8 @@ void mi_modo_video(unsigned char modo){
 
 void limpia_pantalla(){
 	union REGS inregs, outregs;
-	inregs.x.ax = 0x0225;
-	inregs.x.bx = 0x6908;
-	int86(0x11,&inregs,&outregs);
-	return;
+	inregs.x.ax = 0;
+	int86(0x10,&inregs,&outregs);  // INT 10 - AH = 00h VIDEO - SET VIDEO MODE
 }
 
 int main(){
