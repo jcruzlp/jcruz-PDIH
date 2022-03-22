@@ -6,6 +6,7 @@ void mi_pausa(){
    union REGS inregs, outregs;
 	 inregs.h.ah = 8;
 	 int86(0x21, &inregs, &outregs);
+	 return;
 }
 
 void mi_modo_video(unsigned char modo){
@@ -16,13 +17,24 @@ void mi_modo_video(unsigned char modo){
 	return;
 }
 
+void limpia_pantalla(){
+	union REGS inregs, outregs;
+	inregs.h.ax = 0x00;
+	int86(0x16,&inregs,&outregs);
+	return;
+}
+
 int main(){
 
 	mi_modo_video(1);  // modo 1 -> 40x25 (letras grandes)
 
 	printf("\nEn C. Pulsa una tecla...  ");
 
-   	mi_pausa();
+  mi_pausa();
+
+	limpia_pantalla();
+
+	printf("\n Hemos limpiado la pantalla ");
 
 	mi_modo_video(3);  // modo 3 -> 80x25 (letras pequeñas)
 
