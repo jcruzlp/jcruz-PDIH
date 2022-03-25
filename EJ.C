@@ -46,10 +46,11 @@ void setvideomode(unsigned char modo){
 }
 
 void getvideomode(){
+	int modo;
 	union REGS inregs, outregs; 
-	inregs.h.ah = F; 
+	inregs.h.ah = 0xF; 
 	int86(0x10,&inregs,&outregs); 
-	int modo = outregs.h.al;
+	modo = outregs.h.al;
 	return modo;
 }
 
@@ -57,15 +58,6 @@ void clrscr(){
 	union REGS inregs, outregs;
 	inregs.x.ax = 0;
 	int86(0x10,&inregs,&outregs);  // INT 10 - AH = 00h VIDEO - SET VIDEO MODE
-}
-
-int mi_getchar(){
-	union REGS inregs, outregs;
-	int caracter;
-	inregs.h.ah = 1;
-	int86(0x21, &inregs, &outregs);
-	caracter = outregs.h.al;
-	return caracter;
 }
 
 void textcolor(char color){
@@ -82,6 +74,15 @@ void backgroundcolor(char color){
 	inregs.h.bh = color;
 	inregs.x.cx = 1;
 	int86(0x10, &inregs, &outregs);
+}
+
+int mi_getchar(){
+	union REGS inregs, outregs;
+	int caracter;
+	inregs.h.ah = 1;
+	int86(0x21, &inregs, &outregs);
+	caracter = outregs.h.al;
+	return caracter;
 }
 
 void cputchar(char c){
