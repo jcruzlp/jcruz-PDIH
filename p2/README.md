@@ -10,3 +10,6 @@ He ejecutado los siguientes comandos desde la terminal:
 `apt-get update` y `apt-get upgrade`: esto realmente puede que no sea necesario, pero siempre es recomendable hacerlo cuando instalas algo por si tiene alguna dependencia imprevista.
 
 En mi caso habían bastantes cosas que actualizar:
+![image](https://user-images.githubusercontent.com/23319307/162232771-573d3f02-2ac2-4d69-b21c-7be48b11eaea.png)
+
+Una vez hecho esto, deberíamos tener listo nuestra librería.
