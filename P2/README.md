@@ -13,3 +13,33 @@ En mi caso habían bastantes cosas que actualizar:
 ![image](https://user-images.githubusercontent.com/23319307/162232771-573d3f02-2ac2-4d69-b21c-7be48b11eaea.png)
 
 Una vez hecho esto, deberíamos tener listo nuestra librería.
+
+## Ejecución de programas de ejemplo
+
+He añadido los programas de ejemplo del zip de *SWAD*.
+
+Los he compilado de la forma indicada en el guión:
+`gcc <archivo.c> -o <ejecutable> -lncurses`
+
+Para `Hello.c` la compilación ha sido:
+
+
+Y una imagen de la ejeción es:
+
+
+Para `Pelotita.c` la compilación ha sido:
+
+
+Y una imagen de la ejeción es:
+
+
+Para `pruncurses.c` la compilación ha sido:
+
+
+Y una imagen de la ejeción es:
+
+
+Para `ventana.c` la compilación ha sido:
+
+
+Y una imagen de la ejeción es:
