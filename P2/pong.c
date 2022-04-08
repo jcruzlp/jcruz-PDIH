@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <ncurses.h>
 
+#define DELAY 30000
 
 void instrucciones(){
   int rows, cols;
@@ -49,6 +50,33 @@ void instrucciones(){
 
 int main(void) {
   instrucciones();
+
+  int x = 0, y = 0;
+  int max_y = 20, max_x = 20;
+  int next_x = 0;
+  int direction = 1;
+
+  initscr();
+  noecho();
+  curs_set(FALSE);
+
+  while(1) {
+  clear();
+  mvprintw(y, x, "o");
+  refresh();
+
+  usleep(DELAY);
+
+  next_x = x + direction;
+
+  if (next_x >= max_x || next_x < 0) {
+    direction*= -1;
+  } else {
+    x+= direction;
+  }
+  }
+
+  endwin();
 
 
 }
