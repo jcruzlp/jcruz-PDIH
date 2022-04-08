@@ -133,11 +133,13 @@ int main(void) {
 
     //Comprobar puntuaciones y terminar juego
     if(jugador1.puntos == 7){
+      getchar();
       fin++;
       endwin();
     }
 
     if(jugador2.puntos == 7){
+      getchar();
       fin++;
       endwin();
     }
