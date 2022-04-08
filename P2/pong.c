@@ -130,6 +130,17 @@ int main(void) {
       mvprintw(jugador1.y+i,jugador1.x,"#");
       mvprintw(jugador2.y+i,jugador2.x,"#");}
     attroff(COLOR_PAIR(1));
+
+    //Comprobar puntuaciones y terminar juego
+    if(jugador1.puntos == 7){
+      fin++;
+      endwin();
+    }
+
+    if(jugador2.puntos == 7){
+      fin++;
+      endwin();
+    }
   }
 
 }
