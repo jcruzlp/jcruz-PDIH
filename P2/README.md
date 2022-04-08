@@ -145,3 +145,22 @@ Aquí algunas capturas de pantalla con la ejecución en distintos niveles de dif
 ![image](https://user-images.githubusercontent.com/23319307/162413672-3c6d2428-1025-413e-8b86-4c1bc8ad6fe3.png)
 
 ![image](https://user-images.githubusercontent.com/23319307/162413756-120c6e68-f934-4fcc-82f1-27d4acce5eea.png)
+
+
+También he añadido un pequeño fragmento de código para llegar al final de la partida:  
+```c+++
+    //Comprobar puntuaciones y terminar juego
+    if(jugador1.puntos == 7){
+      fin++;
+      endwin();
+    }
+
+    if(jugador2.puntos == 7){
+      fin++;
+      endwin();
+    }
+  }
+```  
+En su momento quería hacer que cada jugador tuviera un mensaje personalizado por eso están en dos funciones en vez de una, pero tuve un problema con el mensaje, así que de momento solo te congela la pantalla.
+
+Y hasta aquí mi intento de hacer esto, hay muchas cosas a las que se pueden meter mano aún, como los mensajes o que cada jugador tenga un tamaño distinto de barra.
