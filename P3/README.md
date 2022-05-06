@@ -9,4 +9,18 @@ Para los dos primeros ejercicios, estos son los montajes que he realizado:
 
 
 
-Mientras que para los opcionales he hecho el del coche fantástico, ya que el de la alarma antirobo ya lo había realizado para el trabajo, así que no quería repetir el mismo. Siendo ésta mi solición:  
+https://user-images.githubusercontent.com/23319307/167172997-f3a41459-5455-49ff-9e14-d0146a9fa2db.mp4
+
+
+
+
+https://user-images.githubusercontent.com/23319307/167173160-875c99fe-e0dd-4dcb-93ae-e8810b86c0f1.mp4
+
+
+
+Mientras que para los opcionales he hecho el del coche fantástico, ya que el de la alarma antirobo ya lo había realizado para el trabajo, así que no quería repetir el mismo. Siendo ésta mi solución:  
+
+
+
+https://user-images.githubusercontent.com/23319307/167173301-e6c05243-af62-4103-bcf8-8a54a7e7449b.mp4
+
