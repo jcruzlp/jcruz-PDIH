@@ -1,0 +1,57 @@
+%!
+
+%% tejado
+newpath     % Start a new path
+0   300 moveto   % 
+200  -200   rlineto
+200   200  rlineto
+1 0 0 setrgbcolor fill
+closepath
+2 setlinewidth
+stroke
+
+
+newpath     % Start a new path
+% x y R angI angF
+100 300 100 0 180 arc
+1 0 0 setrgbcolor fill
+2 setlinewidth
+stroke
+
+newpath     % Start a new path
+% x y R angI angF
+300 300 100 0 180 arc
+1 0 0 setrgbcolor fill
+2 setlinewidth
+stroke
+
+
+/Times-Roman findfont
+30 scalefont
+setfont
+
+newpath
+320 200 moveto
+0.8 setgray
+(A quien madruga,) show
+stroke
+
+newpath
+320 160 moveto
+0.7 setgray
+(Ajos come.) show
+stroke
+
+newpath
+320 120 moveto
+0.6 setgray
+(Quien hambre tiene,) show
+stroke
+
+newpath
+320 80 moveto
+0 setgray
+(Que ciento volando.) show
+stroke
+
+showpage
