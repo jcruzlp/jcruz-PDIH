@@ -54,3 +54,5 @@ newpath     % Start a new path
 2 setlinewidth
 stroke
 ```
+PD, la dirección de la tarjeta es de los Simpsons.
+PD2, para la frase del corazón he hecho un remix del refranero, así juntas mucha sabiduría popular en poco espacio.
