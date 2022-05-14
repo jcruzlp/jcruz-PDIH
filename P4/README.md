@@ -7,6 +7,8 @@ Principalmente para conseguir algunas formas con los círculos y que me llevame 
 
 Para guiarme un poco de forma rápida con la posición de dónde iba poniendo cada cosa he usado un plugin para vscode: `PostScrit Previewer`  
 
+![](casita.png)
+
 
 Para cada práctica partiendo de los ejemplos del guión simplemente ha sido ir moviendo las cosas hasta dar con la posición que toca.
 
