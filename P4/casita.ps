@@ -1,0 +1,57 @@
+%!
+%% casa
+newpath     % Start a new path
+10 200  moveto   % 
+300  0   rlineto
+0   300  rlineto
+-300 0   rlineto
+0.7 setgray
+fill
+closepath
+5 setlinewidth
+
+%% ventana 1
+newpath     % Start a new path
+30 330  moveto   % 
+100  0   rlineto
+0   90  rlineto
+-100 0   rlineto
+0 1 1 setrgbcolor fill
+closepath
+2 setlinewidth
+
+%% ventana 2
+newpath     % Start a new path
+190 330  moveto   % 
+100  0   rlineto
+0   90  rlineto
+-100 0   rlineto
+0 1 1 setrgbcolor fill
+closepath
+2 setlinewidth
+
+
+%% puerta
+newpath     % Start a new path
+140 200  moveto   % 
+40  0   rlineto
+0   90  rlineto
+-40 0   rlineto
+0.7 0.3 0.0 setrgbcolor fill
+closepath
+2 setlinewidth
+
+
+%% tejado
+newpath     % Start a new path
+0   500 moveto   % 
+155  200   rlineto
+165   -200  rlineto
+1 0 0 setrgbcolor fill
+closepath
+2 setlinewidth
+
+
+stroke
+
+showpage

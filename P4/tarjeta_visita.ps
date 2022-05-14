@@ -1,0 +1,44 @@
+%!
+% x y R angI angF
+40 70 200 0 360 arc % dibujar un círculo gris
+0.7 setgray % poner el color a gris claro
+fill % rellenamos la figura recién terminada
+0 setgray
+1 setlinewidth
+stroke % no se pinta nada hasta esta instrucción
+
+
+/Times-Roman findfont
+30 scalefont
+setfont
+
+newpath
+320 200 moveto
+(Hombre Magico) show
+stroke
+
+newpath
+320 160 moveto
+0.8 setgray
+(Pais feliz) show
+stroke
+
+newpath
+320 120 moveto
+0.8 setgray
+(Casa de gominola de la calle de la piruleta) show
+stroke
+
+newpath
+320 80 moveto
+0 setgray
+(655 987 432) show
+stroke
+
+newpath
+480 80 moveto
+0.8 setgray
+(jcruzlp@correo.ugr.es) show
+stroke
+
+showpage
